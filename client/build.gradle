@@ -3,9 +3,6 @@ plugins {
     id 'idea'
    id 'application'
 }
-//apply plugin: 'java'
-//apply plugin: 'idea'
-//apply plugin: 'application'
 
 mainClassName = 'org.ems.MainClient'
 

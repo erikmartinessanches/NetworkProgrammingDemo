@@ -1,9 +1,8 @@
 plugins {
     id 'java'
-  //  id 'application'
+    id 'idea'
+    id 'application'
 }
-//apply plugin: 'application'
-apply plugin: 'idea'
 
 group 'org.ems'
 version '1.0-SNAPSHOT'
@@ -15,7 +14,7 @@ repositories {
     jcenter()
 }
 
-def jme3 = [v:'3.5.2-stable', g:'org.jmonkeyengine']
+//def jme3 = [v:'3.5.2-stable', g:'org.jmonkeyengine']
 
 /*project(":assets") {
     apply plugin: "java"
@@ -43,5 +42,6 @@ dependencies {
 }
 
 test {
-  //  useJUnitPlatform()
+    //useJUnitPlatform()
 }
+
