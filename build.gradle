@@ -1,13 +1,14 @@
 plugins {
     id 'java'
+  //  id 'application'
 }
 //apply plugin: 'application'
-//apply plugin: 'idea'
+apply plugin: 'idea'
 
 group 'org.ems'
 version '1.0-SNAPSHOT'
 
-//mainClassName='netprog.Main'
+//mainClassName='MainClient'
 
 repositories {
     mavenCentral()
@@ -30,15 +31,15 @@ def jme3 = [v:'3.5.2-stable', g:'org.jmonkeyengine']
     }
 }*/
 
+//application {
+//    mainClass = mainClassName
+//}
 
 dependencies {
-    implementation "${jme3.g}:jme3-core:${jme3.v}"
-    runtimeOnly "${jme3.g}:jme3-desktop:${jme3.v}"
-    runtimeOnly "${jme3.g}:jme3-lwjgl3:${jme3.v}"
-    implementation 'com.simsilica:lemur:1.16.0'
-    implementation 'com.simsilica:lemur-proto:1.13.0'
+
    // testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
   //  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    
 }
 
 test {
